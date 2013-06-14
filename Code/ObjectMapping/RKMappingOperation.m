@@ -83,9 +83,13 @@ id RKTransformedValueWithClass(id value, Class destinationType, NSValueTransform
 {
     Class sourceType = [value class];
     
+    Class bsonType = NSClassFromString(@"BSONObjectID");
+    
     if ([value isKindOfClass:destinationType]) {
         // No transformation necessary
         return value;
+    } else if ([value isKindOfClass:[NSString class]] && [destinationType isSubclassOfClass:bsonType]) {
+        return [[bsonType alloc] initWithString:value];
     } else if ([destinationType isSubclassOfClass:[NSDictionary class]]) {
         return [NSMutableDictionary dictionaryWithObject:[NSMutableDictionary dictionary] forKey:value];
     } else if (RKClassIsCollection(destinationType) && !RKObjectIsCollection(value)) {
@@ -550,7 +554,7 @@ static NSString * const RKRootKeyPathPrefix = @"@root.";
     RKLogTrace(@"Mapping attribute value keyPath '%@' to '%@'", attributeMapping.sourceKeyPath, attributeMapping.destinationKeyPath);
 
     // Inspect the property type to handle any value transformations
-    Class type = [self.objectMapping classForKeyPath:attributeMapping.destinationKeyPath];
+    Class type = attributeMapping.destinationClass ?: [self.objectMapping classForKeyPath:attributeMapping.destinationKeyPath];
     if (type && NO == [[value class] isSubclassOfClass:type]) {
         value = [self transformValue:value atKeyPath:attributeMapping.sourceKeyPath toType:type];
     }
