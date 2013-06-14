@@ -36,4 +36,10 @@
     return attributeMapping;
 }
 
++ (instancetype)attributeMappingFromKeyPath:(NSString *)sourceKeyPath toKeyPath:(NSString *)destinationKeyPath destinationClass:(Class) destinationClass {
+    RKAttributeMapping *mapping = [self attributeMappingFromKeyPath:sourceKeyPath toKeyPath:destinationKeyPath];
+    mapping.destinationClass = destinationClass;
+    return mapping;
+}
+
 @end

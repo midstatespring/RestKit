@@ -57,4 +57,8 @@
  */
 + (instancetype)attributeMappingFromKeyPath:(NSString *)sourceKeyPath toKeyPath:(NSString *)destinationKeyPath;
 
+@property (assign) Class destinationClass;
+
++ (instancetype)attributeMappingFromKeyPath:(NSString *)sourceKeyPath toKeyPath:(NSString *)destinationKeyPath destinationClass:(Class) destinationClass;
+
 @end
