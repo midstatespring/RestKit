@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1945D4431EA94EE900D44774 /* RKManagedObjectStore_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 1945D4421EA94EBE00D44774 /* RKManagedObjectStore_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1945D4441EA94EEB00D44774 /* RKManagedObjectStore_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 1945D4421EA94EBE00D44774 /* RKManagedObjectStore_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		25019495166406E30081D68A /* RKValueTransformers.h in Headers */ = {isa = PBXBuildFile; fileRef = 25019493166406E30081D68A /* RKValueTransformers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25019496166406E30081D68A /* RKValueTransformers.h in Headers */ = {isa = PBXBuildFile; fileRef = 25019493166406E30081D68A /* RKValueTransformers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25019497166406E30081D68A /* RKValueTransformers.m in Sources */ = {isa = PBXBuildFile; fileRef = 25019494166406E30081D68A /* RKValueTransformers.m */; };
@@ -631,6 +633,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1945D4421EA94EBE00D44774 /* RKManagedObjectStore_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKManagedObjectStore_Private.h; sourceTree = "<group>"; };
 		2501405215366000004E0466 /* RKObjectiveCppTest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RKObjectiveCppTest.mm; sourceTree = "<group>"; };
 		25019493166406E30081D68A /* RKValueTransformers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKValueTransformers.h; sourceTree = "<group>"; };
 		25019494166406E30081D68A /* RKValueTransformers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKValueTransformers.m; sourceTree = "<group>"; };
@@ -1146,6 +1149,7 @@
 				25160D53145650490060A5C5 /* RKManagedObjectStore.m */,
 				2597F99A15AF6DC400E547D7 /* RKRelationshipConnectionOperation.h */,
 				2597F99B15AF6DC400E547D7 /* RKRelationshipConnectionOperation.m */,
+				1945D4421EA94EBE00D44774 /* RKManagedObjectStore_Private.h */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -1799,6 +1803,7 @@
 				25104F2F15C30E7400829135 /* RKSearchIndexer.h in Headers */,
 				25104F3515C30EF500829135 /* RKSearchPredicate.h in Headers */,
 				25104F3B15C30F2100829135 /* RKSearchWordEntity.h in Headers */,
+				1945D4431EA94EE900D44774 /* RKManagedObjectStore_Private.h in Headers */,
 				25F53AE215E7B612008B54E6 /* RKHTTPUtilities.h in Headers */,
 				2598888D15EC169E006CAE95 /* RKPropertyMapping.h in Headers */,
 				254372A815F54995006E8424 /* RKObjectParameterization.h in Headers */,
@@ -1908,6 +1913,7 @@
 				25104F3C15C30F2100829135 /* RKSearchWordEntity.h in Headers */,
 				25F53AE315E7B612008B54E6 /* RKHTTPUtilities.h in Headers */,
 				2598888E15EC169E006CAE95 /* RKPropertyMapping.h in Headers */,
+				1945D4441EA94EEB00D44774 /* RKManagedObjectStore_Private.h in Headers */,
 				254372B915F54C3F006E8424 /* RKHTTPRequestOperation.h in Headers */,
 				254372BD15F54C3F006E8424 /* RKObjectManager.h in Headers */,
 				254372C115F54C3F006E8424 /* RKPaginator.h in Headers */,
